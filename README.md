@@ -29,7 +29,7 @@
 
 ## 🚀 Demo
 
-[Посмотреть сайт](https://maisdeff.github.io/-onstruction-layout/)
+[Посмотреть сайт](https://maisdeff.github.io/Construction-layout/)
 
 ## 📂 GitHub
 
