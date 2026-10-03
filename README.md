@@ -13,6 +13,7 @@
 - HTML5
 - CSS3
 - Flexbox
+- Grid
 - Responsive Design
 
 ## ✨ Реализовано
@@ -26,13 +27,9 @@
 - Контактная информация
 - Адаптивная верстка
 
-## 📷 Preview
-
-![Preview](img/Frame.png)
-
 ## 🚀 Demo
 
-[Посмотреть сайт]()
+[Посмотреть сайт](https://maisdeff.github.io/-onstruction-layout/)
 
 ## 📂 GitHub
 
