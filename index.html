@@ -10,20 +10,32 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/> -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
 </head>
 
 <body>
-  <header class="header">
+
+  <ul id="slide-out" class="sidenav">
+    <li><a href="#home"><i class="material-icons">home</i>Главная</a></li>
+    <li><a href="#about"><i class="material-icons">people</i>О нас</a></li>
+    <li><a href="#work"><i class="material-icons">grade</i>Услуги</a></li>
+    <li><a href="#contacts"><i class="material-icons">phone</i>Контакты</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="sidenav-close" href="#!"><i class="material-icons">close</i>Закрыть</a></li>
+  </ul>
+
+  <header class="header" id="home">
     <div class="container">
       <div class="header__title">
         <img src="img/logo.svg" alt="Logo" class="logo">
-        <button class="burger">
+        <a class="burger sidenav-trigger" data-target="slide-out">
           <span class="burger__line"></span>
           <span class="burger__line"></span>
           <span class="burger__line"></span>
-        </button>
+        </a>
       </div>
       <h1 class="h1">Реализуем крупнейшие проекты в России</h1>
       <h4 class="h4">Стадионы, газопроводы, мосты, дамбы</h4>
@@ -57,7 +69,7 @@
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container" id="about">
       <h2 class="text-h2 project-h2">Наши самые большие проекты</h2>
       <div class="about__flex">
         <div class="about__flex-item">
@@ -82,6 +94,14 @@
     </div>
   </section>
 
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Заголовок окна</h4>
+      <p>Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные тексты. Повстречался, встретил. Страну точках курсивных до буквенных взгляд гор пор безорфографичный, продолжил ipsum родного прямо живет рыбными текстов, языком назад взобравшись образ домах. Большой, свой! Живет запятой последний эта коварный, пунктуация предложения послушавшись ведущими своего меня снова прямо. Строчка осталось назад инициал страна возвращайся что родного, города текстов вопроса проектах рукопись дорогу? Букв курсивных его она грустный не предупредила заглавных от всех приставка встретил семантика гор, жизни возвращайся большого точках, семь переулка, имени маленькая? Она одна по всей залетают свой семантика океана парадигматическая, путь языкового его страна единственное семь использовало пояс рукописи.</p>
+    </div>
+  </div>
+
   <section class="request">
     <div class="container">
       <div class="request__flex">
@@ -90,16 +110,16 @@
           <h5 class="request__h5">Реализуем самые смелые решения в России!</h5>
         </div>
         <div class="request__flex-right">
-          <button class="request__btn">
+          <a class="request__btn modal-trigger" href="#modal1">
             <img src="img/email.svg" alt="" class="request__img">
             <p class="request__p">Ваш запрос</p>
-          </button>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="services">
+  <section class="services" id="work">
     <div class="container">
       <h2 class="text-h2 section__h2">Чем мы занимаемся?</h2>
       <div class="services__grid">
@@ -134,28 +154,28 @@
   <section class="porfolio">
     <div class="porfolio__grid">
       <div class="porfolio__grid-item">
-        <img class="porfolio__img" src="img/porfolio_item.jpg" alt="porfolio__img">
+        <img class="porfolio__img materialboxed" src="img/porfolio_item.jpg" alt="porfolio__img">
       </div>
       <div class="porfolio__grid-item">
-        <img class="porfolio__img" src="img/porfolio_item.jpg" alt="porfolio__img">
+        <img class="porfolio__img materialboxed" src="img/porfolio_item.jpg" alt="porfolio__img">
       </div>
       <div class="porfolio__grid-item">
-        <img class="porfolio__img" src="img/porfolio_item.jpg" alt="porfolio__img">
+        <img class="porfolio__img materialboxed" src="img/porfolio_item.jpg" alt="porfolio__img">
       </div>
       <div class="porfolio__grid-item">
-        <img class="porfolio__img" src="img/porfolio_item.jpg" alt="porfolio__img">
+        <img class="porfolio__img materialboxed" src="img/porfolio_item.jpg" alt="porfolio__img">
       </div>
       <div class="porfolio__grid-item">
-        <img class="porfolio__img" src="img/porfolio_item.jpg" alt="porfolio__img">
+        <img class="porfolio__img materialboxed" src="img/porfolio_item.jpg" alt="porfolio__img">
       </div>
       <div class="porfolio__grid-item">
-        <img class="porfolio__img" src="img/porfolio_item.jpg" alt="porfolio__img">
+        <img class="porfolio__img materialboxed" src="img/porfolio_item.jpg" alt="porfolio__img">
       </div>
       <div class="porfolio__grid-item">
-        <img class="porfolio__img" src="img/porfolio_item.jpg" alt="porfolio__img">
+        <img class="porfolio__img materialboxed" src="img/porfolio_item.jpg" alt="porfolio__img">
       </div>
       <div class="porfolio__grid-item">
-        <img class="porfolio__img" src="img/porfolio_item.jpg" alt="porfolio__img">
+        <img class="porfolio__img materialboxed" src="img/porfolio_item.jpg" alt="porfolio__img">
       </div>
     </div>
   </section>
@@ -244,16 +264,16 @@
           <h5 class="request__h5">ОСТАВЬТЕ ЗАЯВКУ И МЫ СВЯЖЕМСЯ С ВАМИ!</h5>
         </div>
         <div class="request__flex-right">
-          <button class="request__btn">
+          <a class="request__btn modal-trigger" href="#modal1">
             <img src="img/email.svg" alt="" class="request__img">
             <p class="request__p">Ваш запрос</p>
-          </button>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="contacts">
+  <section class="contacts" id="contacts">
     <div class="container">
       <h2 class="text-h2 contacts__h2">КОНТАКТЫ</h2>
       <div class="contacts__flex">
@@ -289,6 +309,9 @@
       </div>
     </div>
   </footer>
+
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>

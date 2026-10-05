@@ -15,6 +15,7 @@
 - Flexbox
 - Grid
 - Responsive Design
+- Materialize
 
 ## ✨ Реализовано
 
